@@ -2,7 +2,7 @@ import React from "react";
 
 const TableCoins = ({ coins }) => {
   return (
-    <table className="table">
+    <table>
       <thead>
         <tr>
           <td>name</td>
