@@ -9,11 +9,10 @@ const CoinRow = ({ coin, index }) => {
         <img
           src={coin.image}
           alt={coin.name}
-          style={{ maxwidth: "100%", width: "30px" }}
+          style={{ maxwidth: "100%", width: "40px" }}
           className="img-fluid me-4"
         />
         <span>{coin.name}</span>
-        <span className="ms-3 text-muted text-uppercase">{coin.symbol}</span>
       </td>
       <td>{coin.current_price}</td>
       <td>{coin.price_change_percentage_24h}</td>

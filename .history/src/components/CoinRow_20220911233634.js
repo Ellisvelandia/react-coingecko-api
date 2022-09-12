@@ -13,7 +13,7 @@ const CoinRow = ({ coin, index }) => {
           className="img-fluid me-4"
         />
         <span>{coin.name}</span>
-        <span className="ms-3 text-muted text-uppercase">{coin.symbol}</span>
+        <span>{coin.name}</span>
       </td>
       <td>{coin.current_price}</td>
       <td>{coin.price_change_percentage_24h}</td>
