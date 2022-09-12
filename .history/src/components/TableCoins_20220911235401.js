@@ -4,9 +4,8 @@ import CoinRow from "./CoinRow";
 const titles = ["#", "coin", "price", "price Change", "24h Volume"];
 
 const TableCoins = ({ coins, search }) => {
-  const filteredCoins = coins.filter((coin) =>
-  coin.name.toLowerCase().includes(search.toLowerCase()) ||
-    coin.symbol.toLowerCase().includes(search.toLowerCase())
+  const filteredCoins = coins.filter((coin) => 
+  coin.name.toLowerCase().include(search.toLowerCase())
   );
 
   return (

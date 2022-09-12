@@ -4,9 +4,8 @@ import CoinRow from "./CoinRow";
 const titles = ["#", "coin", "price", "price Change", "24h Volume"];
 
 const TableCoins = ({ coins, search }) => {
-  const filteredCoins = coins.filter((coin) =>
-  coin.name.toLowerCase().includes(search.toLowerCase()) ||
-    coin.symbol.toLowerCase().includes(search.toLowerCase())
+  const filteredCoins = coins.filter((coin) => 
+  coin.name.toLowerCase().include(search.toLowerCase())
   );
 
   return (
@@ -19,7 +18,7 @@ const TableCoins = ({ coins, search }) => {
         </tr>
       </thead>
       <tbody>
-        {filteredCoins.map((coin, index) => (
+        {coins.map((coin, index) => (
           <CoinRow coin={coin} key={index} index={index + 1} />
         ))}
       </tbody>

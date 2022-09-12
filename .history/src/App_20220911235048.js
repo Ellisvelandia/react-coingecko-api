@@ -26,9 +26,9 @@ function App() {
           type="text"
           placeholder="Search a Coin"
           className="form-control text-light border-0 mt-4 text-center"
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={e => setSearch(e.target.value)}
         />
-        <TableCoins coins={coins} search={search} />
+        <TableCoins coins={coins} />
       </div>
     </div>
   );
