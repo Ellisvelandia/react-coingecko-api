@@ -16,13 +16,9 @@ const CoinRow = ({ coin, index }) => {
         <span className="ms-3 text-muted text-uppercase">{coin.symbol}</span>
       </td>
       <td>{coin.current_price}</td>
-      <td
-        className={
-          coin.price_change_percentage_24h > 0 ? "text-success" : "text-danger"
-        }
-      >
+      <td className={coin.price_change_percentage_24h }>
         {coin.price_change_percentage_24h}
-      </td>
+        </td>
       <td>{coin.total_volume}</td>
     </tr>
   );
